@@ -8,7 +8,7 @@ const Students = () => {
     useEffect(()=>{
         const fetchStudents = async() =>{
             try {
-                const response = await axios.get('http://localhost:4555/api/registration/students');
+                const response = await axios.get('https://rendersrsbackend3.onrender.com/api/registration/students');
                 if(response.status === 200){
                     console.log(response.data);
                     setStudents(response.data);

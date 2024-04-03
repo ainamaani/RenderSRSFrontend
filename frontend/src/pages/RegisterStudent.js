@@ -12,7 +12,7 @@ const RegisterStudent = () => {
         e.preventDefault();
 
         try {
-            const response = await axios.post("http://localhost:4555/api/registration/register",
+            const response = await axios.post("https://rendersrsbackend3.onrender.com/api/registration/register",
                                     JSON.stringify({ studentName,studentNumber,course }),{
                                         headers:{
                                             'Content-Type' : 'application/json'
